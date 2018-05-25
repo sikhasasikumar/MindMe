@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% block body %}
+<div>
+    <h2>{{ reminder.title }}</h2>
+    <table class="table">
+        <tr>
+            <th>Description</th>
+            <td>{{ reminder.description }}</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>{{ reminder.date|date:'d/m/y' }}</td>
+        </tr>
+    </table>
+    <a href="{% url 'edit-reminder' reminder.id %}" class="btn btn-warning">Edit</a>
+    <a href="{% url 'del-reminder' reminder.id %}" class="btn btn-danger">Delete</a>
+</div>
+{% endblock %}
