@@ -11,6 +11,10 @@
             <th>Date</th>
             <td>{{ reminder.date|date:'d/m/y' }}</td>
         </tr>
+        <tr>
+            <th>Time</th>
+            <td>{{ reminder.date|time }}</td>
+        </tr>
     </table>
     <a href="{% url 'edit-reminder' reminder.id %}" class="btn btn-warning">Edit</a>
     <a href="{% url 'del-reminder' reminder.id %}" class="btn btn-danger">Delete</a>
