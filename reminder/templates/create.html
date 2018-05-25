@@ -7,7 +7,7 @@
     <div class="form-group">
     <label>{{ field.label }}</label>
         {% if field.label == "Date" %}
-        {% render_field field class="form-control" placeholder="mm-dd-yyyy hh:mm:ss" %}
+        {% render_field field class="form-control" placeholder="mm/dd/yyyy hh:mm:ss" %}
         {% else %}
         {% render_field field class="form-control" placeholder=field.label %}
         {% endif %}
