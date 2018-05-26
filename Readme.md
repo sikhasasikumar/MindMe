@@ -18,6 +18,8 @@ Do the Database migrations
 
 `python manage.py makemigrations`
 
+`python manage.py makemigrations reminder`
+
 `python manage.py migrate`
 
 Run the development server using
